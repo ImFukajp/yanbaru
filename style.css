@@ -1,0 +1,65 @@
+/* ふーかのぞーん */
+/* 参考サイトの一旦max横幅1200pxでやらせてもろてるよ☆ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* やすはのぞーん */
+*{border: 1px solid gainsboro;}
+main,h2{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 参考サイト */
+h2{
+    margin: 30px;
+    font-size: 1.3em;
+}
+.site{
+    display: flex;
+    justify-content: center;
+}
+.site-box{
+    width: 30%;
+    aspect-ratio: 1/1;
+
+}
+.site-circle{
+    /* width:100%; */
+    aspect-ratio: 1/1;
+    border: 1px solid mediumaquamarine;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+/* go to top */
+.go-to-top{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* フッター */
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    margin: 30px;
+}
+
