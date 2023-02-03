@@ -76,6 +76,10 @@ h2{
     font-size: 1.3em;
 }
 .site{
+    
+    background-color: white;
+}
+.site-container{
     display: flex;
     justify-content: center;
 }
@@ -97,11 +101,41 @@ h2{
 
 /* go to top */
 .go-to-top{
-    width: 100px;
+    width: 20%;
     margin: 0 auto;
     margin-top: 30px;
+    padding: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    
+}
+.go-to-top::after{
+    content: " ";
+    display: block;
+    border: white solid 1px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: -1;
+    top: -20%;
+    left:50% ;
+    transform: translate(-50%, 0) /*横軸,縦軸*/;
+    background-color: white;
+    
+     
+
 }
 /* フッター */
+footer{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
 footer ul{
     display: flex;
     justify-content: center;
