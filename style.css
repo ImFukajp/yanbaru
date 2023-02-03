@@ -129,7 +129,7 @@ h2 {
 }
 
 /* go to top */
-<<<<<<< HEAD
+
 .go-to-top{
     width: 20%;
     margin: 0 auto;
@@ -172,12 +172,6 @@ footer ul{
 }
 footer li{
     margin: 30px;
-=======
-.go-to-top {
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 30px;
->>>>>>> 2303e2cdb67f41c863fb8448473df1c58989504b
 }
 
 /* フッター */
