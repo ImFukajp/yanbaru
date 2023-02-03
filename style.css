@@ -1,57 +1,79 @@
 /* ふーかのぞーん */
 /* 参考サイトの一旦max横幅1200pxでやらせてもろてるよ☆ */
 
-*{
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    font-family:arial;
-  }
-  body{background:#ecf0f1; font-family:arial; margin:0; color:#888}
-  .banner{
-    background:#61777a;
-    line-height:400px;
-    text-align:center;
-    color:#fff;
-    font-size:60px;
-    height:400px;
-    width: 100%;
-  }
-  
-  
-  
-  .header{
-    height:60px;
-    color:#282828;;
-    width:100%;
-  }
-  .logo{
-    margin:0;
-    line-height:50px;
-    float:left;
-  }
-  .nav{
-    list-style:none;
-    float:left;
-  }
-  .nav li{display:inline-block;}
-  .nav li a{
-    display:inline-block;
-     padding:5px 15px;
-    color:inherit;
-    text-decoration:none;
-  }
-  
-  .container{
-    max-width:1200px;
-    padding:0 15px;
-    width:100%;
-  }
-  .container:after {
-      clear: both;
-      content: "";
-      display: table;
-  }
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background: #ecf0f1;
+  font-family: arial;
+  margin: 0;
+  color: #888
+}
+
+.banner {
+  background: #61777a;
+  line-height: 400px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  height: 400px;
+  width: 100%;
+}
+
+
+
+.header {
+  height: 60px;
+  color: #282828;
+  /* padding-left:10px ; */
+  width: 100%;
+}
+
+.logo {
+  margin: 0;
+  line-height: 50px;
+  float: left;
+}
+
+.slide-items {
+  text-align: center;
+  width: 100%;
+  height: 40%;
+}
+
+.slide-items img {
+  width: 80%;
+  height: auto;
+  /* object-fit: cover; */
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  display: inline-block;
+  padding: 5px 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
 
 
@@ -63,50 +85,58 @@
 
 
 /* やすはのぞーん */
-*{border: 1px solid gainsboro;}
-main,h2{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+* {
+  border: 1px solid gainsboro;
+}
+
+main,
+h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* 参考サイト */
-h2{
-    margin: 30px;
-    font-size: 1.3em;
+h2 {
+  margin: 30px;
+  font-size: 1.3em;
 }
-.site{
-    display: flex;
-    justify-content: center;
+
+.site {
+  display: flex;
+  justify-content: center;
 }
-.site-box{
-    width: 30%;
-    aspect-ratio: 1/1;
+
+.site-box {
+  width: 30%;
+  aspect-ratio: 1/1;
 
 }
-.site-circle{
-    /* width:100%; */
-    aspect-ratio: 1/1;
-    border: 1px solid mediumaquamarine;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
+
+.site-circle {
+  /* width:100%; */
+  aspect-ratio: 1/1;
+  border: 1px solid mediumaquamarine;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
 }
 
 /* go to top */
-.go-to-top{
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-/* フッター */
-footer ul{
-    display: flex;
-    justify-content: center;
-}
-footer li{
-    margin: 30px;
+.go-to-top {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
+/* フッター */
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 30px;
+}
