@@ -84,6 +84,149 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* やすはのぞーん */
 * {
   border: 1px solid gainsboro;
@@ -96,7 +239,7 @@ h2 {
   text-align: center;
 }
 
-/* 参考サイト */
+/* あ役立ちサイト */
 h2 {
   margin: 30px;
   font-size: 1.3em;
@@ -117,69 +260,134 @@ h2 {
 
 }
 
-.site-circle {
-  /* width:100%; */
-  aspect-ratio: 1/1;
-  border: 1px solid mediumaquamarine;
+.site-box img {
+  width:90%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  cursor: pointer;
 }
 
+.site-box img.on{
+  box-shadow: #61777a 6px 6px  ;
+  top: -3px;
+  
+}
 /* go to top */
 
 .go-to-top{
     width: 20%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+    border: white solid 1px;
+    border-radius: 100px 100px 0 0;
+    width: 120px;
+    height: 60px;
     position: relative;
     z-index: 1;
+    /* top: -20%;
+    left:50% ; */
+    /* transform: translate(-50%, 0) 横軸,縦軸; */
+    background-color: white;
     
 }
-.go-to-top::after{
+/* .go-to-top::before{
     content: " ";
     display: block;
     border: white solid 1px;
-    border-radius: 50%;
+    border-radius: 100px 100px 0 0;
     width: 180px;
-    height: 180px;
+    height: 80px;
     position: absolute;
     z-index: -1;
     top: -20%;
     left:50% ;
     transform: translate(-50%, 0) /*横軸,縦軸*/;
-    background-color: white;
+    /* background-color: white;
     
      
 
+} */ */
+
+/* お問い合わせ */
+.info-btn{
+  padding: 20px 15px;
+  width: 30%;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1;
+  
 }
-/* フッター */
-footer{
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    background-color: white;
+.info-btn.on{
+  border: 1px solid #888;
+  border-radius: 50px;
+  background-color: #888;
+  color: #ecf0f1;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 30%;
+  margin: 0 auto;
 }
 
-footer ul{
-    display: flex;
-    justify-content: center;
-}
-footer li{
-    margin: 30px;
-}
-
-/* フッター */
-footer ul {
+.info-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.432) ;
+  position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity:0;
+  z-index: -2;
+  transition: all .5s ease;
 }
-
-footer li {
-  margin: 30px;
+/* jQuery */
+.info-container.on{
+  opacity:1;
+  z-index: 1;
 }
+.close-btn{
+  text-align: end;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.info-message{
+  height: 300px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+.info-message span{
+  display: block;
+  padding: 5%;
+}
+  /* フッター */
+  footer{
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      background-color: white;
+  }
+  
+  footer ul{
+      display: flex;
+      justify-content: center;
+  }
+  footer li{
+      margin: 30px;
+      font-size: 0.8em;
+  }
