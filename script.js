@@ -25,6 +25,9 @@ $(function(){
           }
         ]
       });
+      $('.slide-items').animate({
+        
+      },2000)
     // $(".slide-items").slick();
 
 
