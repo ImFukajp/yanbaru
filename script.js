@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(function(){
     $('.zoomInTrigger').each(function(){ //zoomInTriggerというクラス名が
         var elemPos = $(this).offset().top-50;//要素より、50px上の
@@ -44,14 +44,7 @@ $(function(){
             }
           }
         ]
-      });
-=======
-$(function () {
-
-
-    // $(".slide-items").slick();
-
->>>>>>> 55e216e6195cf3dd3d160bf0c66df3faf4269e60
+    });
 
 
 
@@ -198,38 +191,6 @@ $(function () {
         $(".contact-container").removeClass('on')
     })
 
-// <<<<<<< HEAD
-
-// =======
-//     $('.slide-items').slick({
-//         centerMode: true,
-//         centerPadding: '60px',
-//         slidesToShow: 2,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 480,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-//       $('.slide-items').animate({
-        
-//       },2000)
-//     // $(".slide-items").slick();
 
 
 
