@@ -60,9 +60,6 @@ button{
   background: #fff;
   padding: 30px;
   top: -160px;
-  z-index: 2;
-  /* width: 50%; */
-  
 }
 .show {
   display: flex;
@@ -75,6 +72,7 @@ button{
   text-align: center;
   max-width: 100%;
   padding: 180px;
+  background-color: #fcec58de;
 }
 
 .slide-items img {
@@ -106,7 +104,49 @@ max-width: 100%;
 }
 
 
+.zoomIn{
+  animation-name:zoomInAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+}
 
+@keyframes zoomInAnime{
+  from {
+  transform: scale(5);
+  opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+  opacity: 1;
+  }
+}
+
+/* 縮小 */
+.zoomOut{
+  animation-name:zoomOutAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes zoomOutAnime{
+  from {
+  transform: scale(1.2);
+  opacity: 0;
+  }
+
+  to {
+    transform:scale(1);
+  opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.zoomInTrigger,
+.zoomOutTrigger{
+    opacity: 0;
+}
 
 
 
@@ -115,9 +155,9 @@ max-width: 100%;
 
 
 /* やすはのぞーん */
-* {
+/* * {
   border: 1px solid gainsboro;
-}
+} */
 
 main,
 h2 {
