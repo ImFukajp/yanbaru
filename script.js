@@ -1,4 +1,12 @@
 $(function(){
+    
+    $('button').on('click',function(){
+        $('.popup').addClass('show').fadeIn();
+    });
+      
+    $('#close').on('click',function(){
+        $('.popup').fadeOut();
+    });
 
     $('.slide-items').slick({
         centerMode: true,
@@ -25,9 +33,7 @@ $(function(){
           }
         ]
       });
-      $('.slide-items').animate({
-        
-      },2000)
+
     // $(".slide-items").slick();
 
 
