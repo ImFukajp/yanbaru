@@ -154,10 +154,161 @@ max-width: 100%;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* やすはのぞーん */
+<<<<<<< HEAD
 /* * {
   border: 1px solid gainsboro;
 } */
+=======
+* {
+  /* border: 1px solid gainsboro; */
+  box-sizing: border-box;
+  font-family: "Nico Moji";
+}
+>>>>>>> 55e216e6195cf3dd3d160bf0c66df3faf4269e60
 
 main,
 h2 {
@@ -166,90 +317,229 @@ h2 {
   text-align: center;
 }
 
-/* 参考サイト */
+/* お役立ちサイト */
 h2 {
   margin: 30px;
   font-size: 1.3em;
+  color: #888;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px gold;
 }
 
-.site-container{
-    display: flex;
-    justify-content: center;
+.site-container {
+  display: flex;
+  justify-content: center;
 }
 
 .site {
   background-color: white;
 }
 
+
 .site-box {
   width: 30%;
   aspect-ratio: 1/1;
-
+  padding-top: 20px;
+  /* margin-top: 10px; */
 }
 
-.site-circle {
-  /* width:100%; */
-  aspect-ratio: 1/1;
-  border: 1px solid mediumaquamarine;
+.d.deco{
+  background-image: url(./images/dufufufu.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
+}
+
+.k.deco{
+  background-image: url(./images/kimiwaka.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
+}
+.p.deco{
+  background-image: url(./images/paizaa.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
+}
+
+.site-box img {
+  width: 90%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  cursor: pointer;
 }
+
+.site-box img.on {
+  box-shadow: #61777a 6px 6px;
+  top: -3px;
+
+
+}
+
 
 /* go to top */
-
-.go-to-top{
-    width: 20%;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 20px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 1;
-    
+.gtt {
+  /* width: 1440px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.go-to-top::after{
+
+.rocket {
+  height: 50px;
+}
+
+
+.go-to-top {
+  width: 20%;
+  margin-top: 60px;
+  padding: 20px;
+  padding-top: 25px;
+  cursor: pointer;
+  border: white solid 1px;
+  border-radius: 200px 200px 0 0;
+  width: 200px;
+  height: 70px;
+  /* position: relative;
+    z-index: 1; */
+  /* top: -20%;
+    left:50% ; */
+  /* transform: translate(-50%, 0) 横軸,縦軸; */
+  background-color: white;
+}
+
+.go-to-top.on {
+  color: #282828;
+}
+
+#space-color {
+  background: rgb(12, 12, 100);
+}
+
+#sky-color {
+  background: rgb(67, 156, 246);
+}
+
+#rocket-color {
+  background: rgb(255, 245, 109);
+}
+
+/* .go-to-top::before{
     content: " ";
     display: block;
     border: white solid 1px;
-    border-radius: 50%;
+    border-radius: 100px 100px 0 0;
     width: 180px;
-    height: 180px;
+    height: 80px;
     position: absolute;
     z-index: -1;
     top: -20%;
     left:50% ;
-    transform: translate(-50%, 0) /*横軸,縦軸*/;
-    background-color: white;
+    transform: translate(-50%, 0) /*横軸,縦軸*/
+/* background-color: white;
     
      
 
+} */
+
+/* お問い合わせ */
+.contact{
+  height: 10vh;
+  margin: 0 auto;
+  padding-top: 20px;
 }
-/* フッター */
-footer{
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    background-color: white;
+.contact-btn {
+  padding: 10px 15px;
+  width: 25%;
+  height: 80%;
+  margin: 0px auto;
+  /* position: relative;
+  z-index: 1; */
+
 }
 
-footer ul{
-    display: flex;
-    justify-content: center;
+.contact-btn.on {
+  border: 1px solid #888;
+  border-radius: 50px;
+  background-color: #888;
+  color: #ecf0f1;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 30%;
+  margin: 0px auto;
+  text-align: center;
 }
-footer li{
-    margin: 30px;
+
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.432);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -2;
+  transition: all .5s ease;
+}
+
+/* jQuery */
+.contact-container.on {
+  opacity: 1;
+  z-index: 2;
+}
+
+.close-btn {
+  text-align: end;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.contact-message {
+  height: 300px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 5%;
+  padding-bottom: 10%;
+
+}
+
+.contact-message span {
+  display: block;
+  padding-top: 3%;
 }
 
 /* フッター */
+footer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* z-index: 0; */
+  background-color: white;
+}
+
 footer ul {
   display: flex;
   justify-content: center;
 }
 
 footer li {
-  margin: 30px;
+  margin: 15px;
+  font-size: 0.8em;
 }
