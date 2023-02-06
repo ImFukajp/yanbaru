@@ -109,29 +109,44 @@ $(function () {
 
     // やすはのぞーん
     // お役立ちサイト
-    $(".site-circle").on("mouseover",function () {
-        console.log($(".site-circle"));
-        $(this).addClass("on");
+    $(".site-box img").hover(function () {
+        // console.log($(".site-circle"));
+        $(this).toggleClass("on");
+        
     })
-    $(".site-circle").on("mouseleave",function () {
-        console.log($(".site-circle"));
-        $(this).removeClass("on");
+
+    $(".site-box.d").hover(function () {
+        $(".site-box.d").toggleClass("deco")
+    })
+    $(".site-box.k").hover(function () {
+        $(".site-box.k").toggleClass("deco")
+    })
+    $(".site-box.p").hover(function () {
+        $(".site-box.p").toggleClass("deco")
     })
 
     // topへスクロール
     $(".go-to-top").on("click",function () {
-        $("body,html").animate({scrollTop:0},500)
+        $("body,html").animate({scrollTop:0},3000)
+        $("#rocket-color")
     })
 
+    $(".go-to-top").hover(function () {
+        $(".go-to-top").toggleClass("on")
+    })
+
+    $(".rocket").offset().top//3100
+    console.log($(window).scrollTop());
+
     // お問い合わせボタン
-    $(".info-btn").hover(function () {
+    $(".contact-btn").hover(function () {
         $(this).toggleClass("on")
     })
-    $(".info-btn").on("click",function () {
-        $(".info-container").addClass('on')
+    $(".contact-btn").on("click",function () {
+        $(".contact-container").addClass('on')
     })
     $(".close-btn").on("click",function () {
-        $(".info-container").removeClass('on')
+        $(".contact-container").removeClass('on')
     })
 
 

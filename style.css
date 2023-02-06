@@ -229,7 +229,9 @@ body {
 
 /* やすはのぞーん */
 * {
-  border: 1px solid gainsboro;
+  /* border: 1px solid gainsboro; */
+  box-sizing: border-box;
+  font-family: "Nico Moji";
 }
 
 main,
@@ -239,29 +241,54 @@ h2 {
   text-align: center;
 }
 
-/* あ役立ちサイト */
+/* お役立ちサイト */
 h2 {
   margin: 30px;
   font-size: 1.3em;
+  color: #888;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px gold;
 }
 
-.site-container{
-    display: flex;
-    justify-content: center;
+.site-container {
+  display: flex;
+  justify-content: center;
 }
 
 .site {
   background-color: white;
 }
 
+
 .site-box {
   width: 30%;
   aspect-ratio: 1/1;
+  padding-top: 20px;
+  /* margin-top: 10px; */
+}
 
+.d.deco{
+  background-image: url(./images/dufufufu.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
+}
+
+.k.deco{
+  background-image: url(./images/kimiwaka.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
+}
+.p.deco{
+  background-image: url(./images/paizaa.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 20px;
 }
 
 .site-box img {
-  width:90%;
+  width: 90%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -273,32 +300,61 @@ h2 {
   cursor: pointer;
 }
 
-.site-box img.on{
-  box-shadow: #61777a 6px 6px  ;
+.site-box img.on {
+  box-shadow: #61777a 6px 6px;
   top: -3px;
-  
-}
-/* go to top */
 
-.go-to-top{
-    width: 20%;
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 20px;
-    padding-top: 30px;
-    cursor: pointer;
-    border: white solid 1px;
-    border-radius: 100px 100px 0 0;
-    width: 120px;
-    height: 60px;
-    position: relative;
-    z-index: 1;
-    /* top: -20%;
-    left:50% ; */
-    /* transform: translate(-50%, 0) 横軸,縦軸; */
-    background-color: white;
-    
+
 }
+
+
+/* go to top */
+.gtt {
+  /* width: 1440px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rocket {
+  height: 50px;
+}
+
+
+.go-to-top {
+  width: 20%;
+  margin-top: 60px;
+  padding: 20px;
+  padding-top: 25px;
+  cursor: pointer;
+  border: white solid 1px;
+  border-radius: 200px 200px 0 0;
+  width: 200px;
+  height: 70px;
+  /* position: relative;
+    z-index: 1; */
+  /* top: -20%;
+    left:50% ; */
+  /* transform: translate(-50%, 0) 横軸,縦軸; */
+  background-color: white;
+}
+
+.go-to-top.on {
+  color: #282828;
+}
+
+#space-color {
+  background: rgb(12, 12, 100);
+}
+
+#sky-color {
+  background: rgb(67, 156, 246);
+}
+
+#rocket-color {
+  background: rgb(255, 245, 109);
+}
+
 /* .go-to-top::before{
     content: " ";
     display: block;
@@ -310,23 +366,30 @@ h2 {
     z-index: -1;
     top: -20%;
     left:50% ;
-    transform: translate(-50%, 0) /*横軸,縦軸*/;
-    /* background-color: white;
+    transform: translate(-50%, 0) /*横軸,縦軸*/
+/* background-color: white;
     
      
 
-} */ */
+} */
 
 /* お問い合わせ */
-.info-btn{
-  padding: 20px 15px;
-  width: 30%;
-  margin: 0px auto;
-  position: relative;
-  z-index: 1;
-  
+.contact{
+  height: 10vh;
+  margin: 0 auto;
+  padding-top: 20px;
 }
-.info-btn.on{
+.contact-btn {
+  padding: 10px 15px;
+  width: 30%;
+  height: 80%;
+  margin: 0px auto;
+  /* position: relative;
+  z-index: 1; */
+
+}
+
+.contact-btn.on {
   border: 1px solid #888;
   border-radius: 50px;
   background-color: #888;
@@ -334,34 +397,38 @@ h2 {
   padding: 10px 15px;
   cursor: pointer;
   width: 30%;
-  margin: 0 auto;
+  margin: 0px auto;
+  text-align: center;
 }
 
-.info-container{
+.contact-container {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.432) ;
+  background-color: rgba(0, 0, 0, 0.432);
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
-  opacity:0;
+  opacity: 0;
   z-index: -2;
   transition: all .5s ease;
 }
+
 /* jQuery */
-.info-container.on{
-  opacity:1;
-  z-index: 1;
+.contact-container.on {
+  opacity: 1;
+  z-index: 2;
 }
-.close-btn{
+
+.close-btn {
   text-align: end;
   font-size: 1.5em;
   cursor: pointer;
 }
-.info-message{
+
+.contact-message {
   height: 300px;
   width: 400px;
   background-color: #fff;
@@ -370,24 +437,33 @@ h2 {
   padding-bottom: 5%;
   margin: 0 auto;
 }
-.info-message span{
-  display: block;
+
+.title {
   padding: 5%;
+  padding-bottom: 10%;
+
 }
-  /* フッター */
-  footer{
-      width: 100%;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      background-color: white;
-  }
-  
-  footer ul{
-      display: flex;
-      justify-content: center;
-  }
-  footer li{
-      margin: 30px;
-      font-size: 0.8em;
-  }
+
+.contact-message span {
+  display: block;
+  padding-top: 3%;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* z-index: 0; */
+  background-color: white;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 15px;
+  font-size: 0.8em;
+}
