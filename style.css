@@ -57,14 +57,16 @@ button{
 
 .content{
   position: relative;
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 30px;
   top: -160px;
+  z-index: 3;
 }
 .show {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .slide-items {
@@ -326,12 +328,17 @@ h2 {
   text-shadow: 2px 2px 2px gold;
 }
 
+.box.zoomInTrigger{
+  padding-top: 30px;
+}
+
 .site-container {
   display: flex;
   justify-content: center;
 }
 
 .site {
+  padding-bottom: 80px;
   background-color: white;
 }
 
